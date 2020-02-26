@@ -60,10 +60,10 @@
                             <a href="/"><i class="fas fa-tachometer-alt"></i>Dashboard</a>
                         </li>
                         <li>
-                            <a href="../records"><i class="fas fa-chart-bar"></i>Records</a>
+                            <a href="index.php/records"><i class="fas fa-chart-bar"></i>Records</a>
                         </li>
                         <li class="active">
-                            <a href="../records/add"><i class="fas fa-plus-square"></i>Add Records</a>
+                            <a href="index.php/records/add"><i class="fas fa-plus-square"></i>Add Records</a>
                         </li>
                     </ul>
                 </div>
@@ -85,10 +85,10 @@
                             <a href="/"><i class="fas fa-tachometer-alt"></i>Dashboard</a>
                         </li>
                         <li>
-                            <a href="../records"><i class="fas fa-chart-bar"></i>Records</a>
+                            <a href="index.php/records"><i class="fas fa-chart-bar"></i>Records</a>
                         </li>
                         <li class="active">
-                            <a href="../records/add"><i class="fas fa-plus-square"></i>Add Records</a>
+                            <a href="index.php/records/add"><i class="fas fa-plus-square"></i>Add Records</a>
                         </li>
                     </ul>
                 </nav>
@@ -102,7 +102,7 @@
             <header class="header-desktop">
                 <div class="section__content section__content--p30">
                     <div class="container-fluid">
-                        
+
                     </div>
                 </div>
             </header>
@@ -112,7 +112,7 @@
             <div class="main-content">
                 <div class="section__content section__content--p30">
                     <div class="container-fluid">
-                        <div class="row"> 
+                        <div class="row">
                             <div class="col-lg-12">
                                 <h2 class="title-1 m-b-25">Money Tracker</h2>
                                 <div class="col-lg-12">
@@ -126,8 +126,8 @@
                                                     <?php echo validation_errors(); ?>
                                                 </div>
                                             <?php endif; ?>
-                                            <?php echo form_open('../records/add', 'enctype="multipart/form-data" class="form-horizontal"'); ?>
-                                            
+                                            <?php echo form_open('/records/add', 'enctype="multipart/form-data" class="form-horizontal"'); ?>
+
                                                 <div class="form-group">
                                                     <label for="cc-payment" class="control-label mb-1">Amount*</label>
                                                     <input id="cc-pament" name="amount" type="text" class="form-control" aria-required="true" aria-invalid="false" placeholder="10000">
