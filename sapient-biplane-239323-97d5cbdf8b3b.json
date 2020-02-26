@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "sapient-biplane-239323",
+  "private_key_id": "97d5cbdf8b3b5b9e33268b84dd3dc68a896dcfd4",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQDIAwTGnnnd021Z\n6G+hiJTfaNMEuDpidf2QFCFTsilfJuS772pTBiDp0MMByIYCgEZUgN0hhXIK5TNc\nrtyx10b3RTjEfufNIPlZ7GH+DpN/dF1icIzdMIx6QzRsIveY5lZFY+GUvR5UStyr\n953I95/0mNZY+p+W851HPnOBMmNk6ZFV114sLL4GzOo9xb/r00vbYiQSd7ZSRGno\nK1ZfvHDo/8/XhbOHgzVU76+NW3XMtnKF0hYpgqffCVwl5682yVLmAPoUti9jKohU\n6qnVzVrz4ajBA5D8mdsI2JE8n2DEp2aH+ii1CH6Xeg0QMZOL4Z8KjLpQ/Pmn6OnN\nEgw2WCpRAgMBAAECggEAEFEiuhtioMSnVp7eQITWdFVmZaur461xhqgFwgC2XFNd\ndLGG8If+9mQ4DHSx7hFN64XpxFrRH29sXcLMMVv5J6IHjAw4V+U5QmtE4UeKI+s3\n1RiOfVsBEtZZt/qwTVJ5Nkb8N7in+UN0NjlIr4T4ESnIztB/ZX6xVYcUQDV+o1Q/\nwJWw5ZwjzughvKrl6eSPozQVWksTzfWnSdBwZ/FZKaYNLk7a4BdXCCmKnvt25hFe\ngNXvOGm8yEONvRBOS/aFZK41DmXIKJMifM784uc25N8HvfH6eijHqoFpEPc6bP+F\njhBMNsX6iGjylU/5gcXQFbEgMM/qqIHgsao9jLGgmQKBgQDmFoguLaABzgSLxJtT\n85+oaVejmomQSBE5A1djoJz3B60wkJixitm8O/0ttGOJHWd/DiYIryR7XIEvkNwN\n149OP2nji+p65U8/CKDp/UHgyFaS87xIxZvsuxEerayaBi0PDy85VRPdIE0SYn2A\nzFfYX0pGsQxKydrPAAoMOFFDXQKBgQDeiWKau31SO7TTjcvZ8KlauWwVDTSBlosj\nUie09fWZMevmY2PLMFcQBU/vWiAgg+ooDkmIfl42X5wqKJdO6Br/ZeWmlOrluJHP\nCNkGvXZ9oy35PdaGMPJN0HgCFwnJ6tfHzGbAyE4C6QofIMjWsU1O5HfeklxMf3aA\nVQrpFYEnhQKBgBk1Jr5IaVtJQt49L/dGnZtJzzwxVhjkjF5+qzhTBF9cC/FiJhht\naeVhfR9gv/bprckRt8EDzy9ktxKLAFDT6PNdpzAyyAGm1cPGIjsAcBM8X5/B7ELc\nw3RwGjQOOva07oLT2wyg8YgsXcVB3RYbTRR7fBu6keovqzU6f99O3DhRAoGBAME6\ntf35UuY2pdsUQq+pAsSeQLU+1Bq553LyATxmXa155YYVQy/Jd6+XjUMeFMtm/8ls\nLnlwkMnR1z3cJRYFAHxHtFMi95wk2abV3ey2Us7hBChpg37dvWfH3oyiCIPlgRwh\n5g77XpG0XG+O/hU9uw0H4PXITJC4FON19JVTcOQpAoGBANc6S4wUJ2x7kIbYWrrX\nJrsxLeq5wkAFbRHjBEnmUjWs/gpkxA+TFmfJBSwQSr29diXjr5wjMHM1YJeQumkk\n0/EKVbZq6F6gxXGGfKyKRuQMev2c1Sas8wDPVg49WZVOSn86SI10jnxCV+Ox1WuK\ntJJaRPVYu2hcoe/hNRRHSHj6\n-----END PRIVATE KEY-----\n",
+  "client_email": "sapient-biplane-239323@appspot.gserviceaccount.com",
+  "client_id": "102882137342702285304",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/sapient-biplane-239323%40appspot.gserviceaccount.com"
+}

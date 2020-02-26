@@ -3,10 +3,9 @@ const {Storage} = require('@google-cloud/storage')
 const fs = require('fs')
 const dateFormat = require('dateformat')
 
-// TODO: Sesuaikan konfigurasi Storage
 const gcs = new Storage({
-    projectId: '[PROJECT ID]',
-    keyFilename: '[PATH TO SERVICE ACCOUNT KEY JSON]' //example: ./serviceaccountkey.json (file ini bisa didapatkan ketika membuat service account)
+    projectId: 'image-yoga',
+    keyFilename: './sapient-biplane-239323-97d5cbdf8b3b.json' //example: ./serviceaccountkey.json (file ini bisa didapatkan ketika membuat service account)
 })
 
 // TODO: Tambahkan nama bucket yang digunakan

@@ -9,18 +9,17 @@ const multer = Multer({
     fileSize: 5 * 1024 * 1024
 })
 
-// TODO: Sesuaikan konfigurasi database
 const connection = mysql.createConnection({
-    host: '[SQL HOSTNAME]',
-    user: '[SQL USER]',
-    database: '[DATABASE NAME]',
-    password: '[DATABASE PASSWORD]'
+    socketPath: '/cloudsql/sapient-biplane-239323:asia-southeast1:money-tracker',
+    user: 'arioki',
+    database: 'moneytracker',
+    password: 'arioki'
 })
 
 router.get("/dashboard", (req, res) => {
     const query = "select (select count(*) from records where month(records.date) = month(now()) AND year(records.date) = year(now())) as month_records, (select sum(amount) from records) as total_amount;"
     connection.query(query, (err, rows, field) => {
-        if(err) {
+        if (err) {
             res.status(500).send({message: err.sqlMessage})
         } else {
             res.json(rows)
@@ -31,7 +30,8 @@ router.get("/dashboard", (req, res) => {
 router.get("/getrecords", (req, res) => {
     const query = "SELECT * FROM records"
     connection.query(query, (err, rows, field) => {
-        if(err) {
+        console.log("getrecords error : ", err)
+        if (err) {
             res.status(500).send({message: err.sqlMessage})
         } else {
             res.json(rows)
@@ -42,7 +42,7 @@ router.get("/getrecords", (req, res) => {
 router.get("/getlast10records", (req, res) => {
     const query = "SELECT * FROM records ORDER BY date DESC LIMIT 10"
     connection.query(query, (err, rows, field) => {
-        if(err) {
+        if (err) {
             res.status(500).send({message: err.sqlMessage})
         } else {
             res.json(rows)
@@ -53,7 +53,7 @@ router.get("/getlast10records", (req, res) => {
 router.get("/gettopexpense", (req, res) => {
     const query = "SELECT * FROM records WHERE amount < 0 ORDER BY amount ASC LIMIT 10"
     connection.query(query, (err, rows, field) => {
-        if(err) {
+        if (err) {
             res.status(500).send({message: err.sqlMessage})
         } else {
             res.json(rows)
@@ -66,7 +66,7 @@ router.get("/getrecord/:id", (req, res) => {
 
     const query = "SELECT * FROM records WHERE id = ?"
     connection.query(query, [id], (err, rows, field) => {
-        if(err) {
+        if (err) {
             res.status(500).send({message: err.sqlMessage})
         } else {
             res.json(rows)
@@ -80,7 +80,7 @@ router.get("/searchrecords", (req, res) => {
     console.log(s)
     const query = "SELECT * FROM records WHERE name LIKE '%" + s + "%' or notes LIKE '%" + s + "%'"
     connection.query(query, (err, rows, field) => {
-        if(err) {
+        if (err) {
             res.status(500).send({message: err.sqlMessage})
         } else {
             res.json(rows)
@@ -123,7 +123,7 @@ router.put("/editrecord/:id", multer.single('attachment'), imgUpload.uploadToGcs
     }
 
     const query = "UPDATE records SET name = ?, amount = ?, date = ?, notes = ?, attachment = ? WHERE id = ?"
-    
+
     connection.query(query, [name, amount, date, notes, imageUrl, id], (err, rows, fields) => {
         if (err) {
             res.status(500).send({message: err.sqlMessage})
@@ -135,7 +135,7 @@ router.put("/editrecord/:id", multer.single('attachment'), imgUpload.uploadToGcs
 
 router.delete("/deleterecord/:id", (req, res) => {
     const id = req.params.id
-    
+
     const query = "DELETE FROM records WHERE id = ?"
     connection.query(query, [id], (err, rows, fields) => {
         if (err) {
