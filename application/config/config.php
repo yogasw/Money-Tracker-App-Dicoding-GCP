@@ -23,9 +23,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 | a PHP script and you can easily do that on your own.
 |
 */
-// TODO: Sesuaikan dengan base url front-end yang digunakan
 // $config['base_url'] = 'https://webapp-dot-my-playground-230006.appspot.com/';
-$config['base_url'] = 'http://localhost:8000/';
+$config['base_url'] = 'https://sapient-biplane-239323.appspot.com/';
 
 /*
 |--------------------------------------------------------------------------
