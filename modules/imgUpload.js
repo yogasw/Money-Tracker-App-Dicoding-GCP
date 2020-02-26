@@ -8,8 +8,7 @@ const gcs = new Storage({
     keyFilename: './sapient-biplane-239323-97d5cbdf8b3b.json' //example: ./serviceaccountkey.json (file ini bisa didapatkan ketika membuat service account)
 })
 
-// TODO: Tambahkan nama bucket yang digunakan
-const bucketName = '[BUCKET NAME]'
+const bucketName = 'image-yoga'
 const bucket = gcs.bucket(bucketName)
 
 function getPublicUrl(filename) {
