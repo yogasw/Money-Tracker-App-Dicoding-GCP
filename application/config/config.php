@@ -24,7 +24,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 |
 */
 // $config['base_url'] = 'https://webapp-dot-my-playground-230006.appspot.com/';
-$config['base_url'] = 'https://sapient-biplane-239323.appspot.com/';
+$config['base_url'] = 'http://webapp.sapient-biplane-239323.appspot.com/';
 
 /*
 |--------------------------------------------------------------------------
