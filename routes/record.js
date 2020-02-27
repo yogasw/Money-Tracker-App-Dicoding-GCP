@@ -10,7 +10,8 @@ const multer = Multer({
 })
 
 const connection = mysql.createConnection({
-    socketPath: '/cloudsql/sapient-biplane-239323:asia-southeast1:money-tracker',
+    //socketPath: '/cloudsql/sapient-biplane-239323:asia-southeast1:money-tracker',
+    host: '35.198.212.46',
     user: 'arioki',
     database: 'moneytracker',
     password: 'arioki'
