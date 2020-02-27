@@ -7,7 +7,8 @@ class Record_model extends CI_Model {
 
     public function __construct() {
         $this->client = new Client([
-            'base_uri' => "https://sapient-biplane-239323.appspot.com/",
+            'base_uri' => "https://35.240.132.75:8000/",
+            'base_uri' => "https://35.188.19.202:8000/",
         ]);
     }
 
